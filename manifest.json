@@ -1,0 +1,21 @@
+{ 
+  "manifest_version" : 2, 
+  
+  "name": "TimeLapse", "description": "Pulling you out of the internet infinte loop of time wasting when you should be working on your chrome extension.", "version": "0.1", "author": "Georgina Carr & Joseph Corrado",
+
+  "browser_action": {   
+    "default_icon" : "tab-icon.png",  
+    "default_title" : "Time Lapse",
+    "default_popup" : "popup.html"
+  },
+
+  "chrome_url_overrides" : {  
+    "newtab": "newtab.html"
+  },
+
+ "permissions": [
+   "activeTab",
+   "tabs"
+  ]
+}
+

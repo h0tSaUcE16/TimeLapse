@@ -1,0 +1,65 @@
+<!doctype html>
+<html>  
+  <head>    
+    <title>Time Lapse</title>  
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <style src="main.css">
+      body {
+        background-image: url("timeLapse.jpg");
+      }
+      div {
+        height: 180px;
+        width: 400px;
+        background: linear-gradient(to bottom, #a8d3ff 0%, #ffffff 100%);
+        margin-left: 180px;
+        margin-top: 330px;
+        border-radius: 100px;
+        box-shadow: 0px 1px 3px 3px #e8e8e2d6;
+      }
+      label {
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+        /* font-weight: bold; */
+      }
+      th {
+        padding: 5px;
+      }
+      table {
+        border-spacing: 0 15px;
+      }
+      input {
+        font-family: 'Nunito', sans-serif;
+      }
+      @media only screen and (max-height: 768px) {
+        body {
+          background-image: url("croppedTimeLapse.jpg");
+        }
+        div {
+          margin-top: 150px;
+          margin-left: 100px;
+        }
+      }
+    </style>
+  </head>  
+  <body>    
+    <div id="extract">
+      <center><table>
+        <tr>
+          <br>
+          <br>
+          <td><label>Detour Website: </label></td>
+          <td><input type="text" value="youtube.com" id="website"></td>
+        </tr>
+        <tr>
+          <td><label>Break Time (MS): </label></td>
+          <td><input type="text" value="3000" id="time"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="button" value="Submit" id="submit"></td>
+        </tr>
+      </table></center>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
